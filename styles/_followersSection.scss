@@ -1,0 +1,81 @@
+.followers {
+    width: 100%;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20rem;
+        background-color: var(--colorTopBgPattern);
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        z-index: -1;
+    }
+
+    &__head {
+        width: 100%;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__body {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    @include mq($smScreen) {
+        &__head {
+            flex-direction: row;
+        }
+
+        &__body {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @include mq($mdScreen) {
+        &__body {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.followers__head__info {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--colorCardBg);
+
+    &__h {
+        font-size: 2rem;
+        color: var(--colorTextSecondary);
+    }
+
+    &__span {
+        line-height: 1.6;
+    }
+
+    @include mq($smScreen) {
+        border-bottom: none;
+    }
+
+}
+
+.followers__head__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    &>span {
+        color: var(--colorTextPrimary);
+        margin-right: 1rem;
+    }
+}

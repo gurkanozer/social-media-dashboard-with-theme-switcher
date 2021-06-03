@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/main.min.css">
+  <title>Frontend Mentor | Social Media Dashboard With Theme Switcher</title>
+
+</head>
+
+<body>
+  <section class="followers">
+    <div class="wrapper">
+      <div class="followers__head">
+        <div class="followers__head__info">
+          <h1 class="followers__head__info__h">Social Media Dashboard</h1>
+          <span class="followers__head__info__span">Total Followers: 23,004</span>
+        </div>
+        <div class="followers__head__switch">
+          <span class="text-bold text-secondary">Dark Mode </span>
+          <label class="switch">
+            <input type="checkbox" class="theme-switch">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="followers__body">
+        <div class="card card--facebook card--border">
+          <a href="/" class="card__link">
+            <i class="icon fab fa-facebook-square"></i>&nbsp;<span>@nathanf</span>
+          </a>
+          <div class="card__followers">
+            <span class="card__followers__number">1987</span>
+            <span class="card__followers__text">Followers</span>
+          </div>
+          <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 12 Today</span></div>
+        </div>
+        <div class="card card--twitter card--border">
+          <a href="/" class="card__link">
+            <i class="icon fab fa-twitter"></i>&nbsp;<span>@nathanf</span>
+          </a>
+          <div class="card__followers">
+            <span class="card__followers__number">1044</span>
+            <span class="card__followers__text">Followers</span>
+          </div>
+          <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 99 Today</span></div>
+        </div>
+        <div class="card card--instagram card--border">
+          <a href="/" class="card__link">
+            <i class="icon fab fa-instagram"></i>&nbsp;<span>@realnathanf</span>
+          </a>
+          <div class="card__followers">
+            <span class="card__followers__number">11k</span>
+            <span class="card__followers__text">Followers</span>
+          </div>
+          <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 1099 Today</span></div>
+        </div>
+        <div class="card card--youtube card--border">
+          <a href="/" class="card__link">
+            <i class="icon fab fa-youtube"></i>&nbsp;<span>Nathan F.</span>
+          </a>
+          <div class="card__followers">
+            <span class="card__followers__number">8239</span>
+            <span class="card__followers__text">Subscribers</span>
+          </div>
+          <div class="card__status text-danger"><span><i class="fas fa-caret-down"></i></i> 144 Today</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="overview">
+    <div class="wrapper">
+      <h1 class="text-secondary">Overview - Today</h1>
+      <div class="overview__body">
+        <div class="card card--facebook">
+          <div class="card__info">
+            <span>Page Views</span>
+            <span class="icon"><i class="fab fa-facebook-square"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">87</span>
+            <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 3%</span></div>
+          </div>
+        </div>
+        <div class="card card--facebook">
+          <div class="card__info">
+            <span>Likes</span>
+            <span class="icon"><i class="fab fa-facebook-square"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">52</span>
+            <div class="card__status text-danger"><span><i class="fas fa-caret-down"></i></i> 2%</span></div>
+          </div>
+        </div>
+        <div class="card card--instagram">
+          <div class="card__info">
+            <span>Likes</span>
+            <span class="icon"><i class="fab fa-instagram"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">5462</span>
+            <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 2257%</span></div>
+          </div>
+        </div>
+        <div class="card card--instagram">
+          <div class="card__info">
+            <span>Profile Views</span>
+            <span class="icon"><i class="fab fa-instagram"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">52k</span>
+            <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 1375%</span></div>
+          </div>
+        </div>
+        <div class="card card--twitter">
+          <div class="card__info">
+            <span>Retweets</span>
+            <span class="icon"><i class="fab fa-twitter"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">117</span>
+            <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 303%</span></div>
+          </div>
+        </div>
+        <div class="card card--twitter">
+          <div class="card__info">
+            <span>Likes</span>
+            <span class="icon"><i class="fab fa-twitter"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">507</span>
+            <div class="card__status text-success"><span><i class="fas fa-caret-up"></i></i> 553%</span></div>
+          </div>
+        </div>
+        <div class="card card--youtube">
+          <div class="card__info">
+            <span>Likes</span>
+            <span class="icon"><i class="fab fa-youtube"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">107</span>
+            <div class="card__status text-danger"><span><i class="fas fa-caret-down"></i></i> 19%</span></div>
+          </div>
+        </div>
+        <div class="card card--youtube">
+          <div class="card__info">
+            <span>Total Views</span>
+            <span class="icon"><i class="fab fa-youtube"></i></span>
+          </div>
+          <div class="card__info">
+            <span class="highlight">1407</span>
+            <div class="card__status text-danger"><span><i class="fas fa-caret-down"></i></i> 12%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./src/app.js"></script>
+</body>
+
+</html>

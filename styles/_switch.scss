@@ -1,0 +1,60 @@
+$switchHeight: 1.5rem; //2rem;
+$switchWidth: 3rem; //4rem;
+$switchPadding: 0.25rem;
+$switchSlider: 1rem; //1.5rem;
+$switchMove: 1.6rem; //2rem;
+$colorSwitchPrimary:var(--colorToggle);
+$colorSwitchSecondary: var(--colorToggle);
+$colorSwitchSlider: var(--colorBg);
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: $switchWidth;
+    height: $switchHeight;
+
+    input:checked+.slider {
+        background: $colorSwitchPrimary;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX($switchMove);
+        -ms-transform: translateX($switchMove);
+        transform: translateX($switchMove);
+    }
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $colorSwitchSecondary;
+    border-radius: $switchHeight;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: $switchSlider;
+        width: $switchSlider;
+        left: $switchPadding;
+        bottom: $switchPadding;
+        background: $colorSwitchSlider;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+}

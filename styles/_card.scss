@@ -1,0 +1,129 @@
+.card {
+    width: 100%;
+    background-color: var(--colorCardBg);
+    border-radius: 4px;
+    text-align: center;
+    padding: 1rem 2rem 1rem;
+    transition: all .4s ease;
+
+    &:hover {
+        transition: all .4s ease;
+        background-color: var(--colorCardBgHover);
+    }
+}
+
+.card__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--colorSecondary);
+
+    span {
+        font-size: 0.9rem;
+    }
+}
+
+.card__followers {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+
+    &__number {
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: var(--colorTextSecondary);
+    }
+
+    &__text {
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+}
+
+.card__status {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+    span {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        font-size: 1.4rem;
+    }
+
+    .highlight {
+        font-size: 2rem;
+        color: var(--colorTextSecondary);
+    }
+}
+
+/**CARD TYPES*/
+.card--border {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.card--facebook {
+    .icon {
+        color: var(--colorFacebook);
+    }
+
+    &::before {
+        background-color: var(--colorFacebook);
+    }
+
+}
+
+.card--youtube {
+    .icon {
+        color: var(--colorYoutube);
+    }
+
+    &::before {
+        background-color: var(--colorYoutube);
+    }
+}
+
+.card--twitter {
+    .icon {
+        color: var(--colorTwitter);
+    }
+
+    &::before {
+        background-color: var(--colorTwitter);
+    }
+}
+
+.card--instagram {
+    .icon {
+        background: var(--colorInstaGradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &::before {
+        background-image: var(--colorInstaGradient);
+    }
+}

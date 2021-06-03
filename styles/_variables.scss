@@ -1,0 +1,20 @@
+:root {
+    --colorSuccess: hsl(163, 72%, 41%);
+    --colorDanger: hsl(356, 69%, 56%);
+
+    --colorFacebook: hsl(208, 92%, 53%);
+    --colorTwitter: hsl(203, 89%, 53%);
+    --colorInstaGradient: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --colorYoutube: hsl(348, 97%, 39%);
+    --colorBg: hsl(0, 0%, 100%);
+    --colorTopBgPattern: hsl(225, 100%, 98%);
+    --colorCardBg: hsl(227, 47%, 96%);
+    --colorCardBgHover: hsl(237, 52%, 92%);
+    --colorTextPrimary: hsl(228, 12%, 44%);
+    --colorTextSecondary: hsl(230, 17%, 14%);
+    --colorToggle: hsl(230, 22%, 74%);
+}
+
+$smScreen :576px;
+$mdScreen :768px;
+$lgScreen :992px;

@@ -1,0 +1,20 @@
+.overview {
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.overview__body {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include mq($smScreen) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq($mdScreen) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
