@@ -49,16 +49,16 @@
     }
 }
 
-.followers__head__info {
+.followers__info {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--colorCardBg);
 
-    &__h {
+    .title {
         font-size: 2rem;
         color: var(--colorTextSecondary);
     }
 
-    &__span {
+    .text {
         line-height: 1.6;
     }
 
@@ -68,7 +68,7 @@
 
 }
 
-.followers__head__switch {
+.followers__switch {
     display: flex;
     justify-content: space-between;
     align-items: center;
